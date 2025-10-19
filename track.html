@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Delivery – LocalGo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">LocalGo</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="vendors.html">Vendors</a>
+      <a href="order.html">Order</a>
+      <a href="track.html" class="active">Track</a>
+      <a href="orders.html">My Orders</a>
+    </nav>
+    <h1>Local Delivery System</h1>
+  <button id="theme-toggle" class="theme-toggle">🌙</button>
+  </header>
+
+  <section class="track-section">
+    <h2>Track Your Order</h2>
+    <p class="subtext">Enter your order ID or view the most recent order below.</p>
+
+    <div class="track-container">
+      <input type="text" id="trackId" placeholder="Enter Order ID..." />
+      <button onclick="trackOrder()">Track</button>
+    </div>
+
+    <div id="trackResult" class="track-result"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LocalGo Delivery Service. All rights reserved.</p>
+  </footer>
+
+  <script src="track.js"></script>
+</body>
+</html>

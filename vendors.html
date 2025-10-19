@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendors – LocalGo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🚚 LocalGo</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="vendors.html" class="active">Vendors</a>
+      <a href="order.html">Book Delivery</a>
+      <a href="track.html">Track Order</a>
+      <a href="orders.html">My Orders</a>
+    </nav>
+    <h1>Local Delivery System</h1>
+  <button id="theme-toggle" class="theme-toggle">🌙</button>
+  </header>
+
+  <section class="vendors-section">
+    <h2>Available Delivery Partners</h2>
+    <p class="subtext">Choose your preferred vendor to handle your delivery.</p>
+
+    <div class="vendors-container">
+      <div class="vendor-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtgqTRxyV3Ni7a7ghZbT8bPRlzqJ0BtKRaA&s" alt="Vendor 1">
+        <h3>Hajara Express</h3>
+        <p>⭐ 4.9 (125 deliveries)</p>
+        <p><strong>Location:</strong> Accra</p>
+        <button onclick="selectVendor('Hajara Express', '233551234567')">Request Delivery</button>
+      </div>
+
+      <div class="vendor-card">
+        <img src="https://i.pinimg.com/736x/ee/09/28/ee09289d7a34a732a13b9f090b49f043.jpg" alt="Vendor 2">
+        <h3>Kwame Courier</h3>
+        <p>⭐ 4.8 (98 deliveries)</p>
+        <p><strong>Location:</strong> Madina</p>
+        <button onclick="selectVendor('Kwame Courier', '233501234567')">Request Delivery</button>
+      </div>
+
+      <div class="vendor-card">
+        <img src="https://media.istockphoto.com/id/1473328941/photo/young-african-man-mobile-banking-on-the-go-with-smartphone.jpg?s=612x612&w=0&k=20&c=1YhhjF5gxbnwRbiYzevDMc09mwoppqpyQ_JTimg77tg=" alt="Vendor 3">
+        <h3>Sarah FastDrop</h3>
+        <p>⭐ 4.7 (85 deliveries)</p>
+        <p><strong>Location:</strong> East Legon</p>
+        <button onclick="selectVendor('Sarah FastDrop', '233541234567')">Request Delivery</button>
+      </div>
+    </div>
+    <div class="vendors-container">
+      <div class="vendor-card">
+        <img src="https://www.shutterstock.com/image-photo/handsome-young-african-man-260nw-575312215.jpg" alt="Vendor 4">
+        <h3>Ahtitude</h3>
+        <p>⭐ 4.9 (125 deliveries)</p>
+        <p><strong>Location:</strong> Osu</p>
+        <button onclick="selectVendor('Ahtitude', '233551234567')">Request Delivery</button>
+      </div>
+
+      <div class="vendor-card">
+        <img src="https://www.shutterstock.com/image-photo/happy-young-african-man-smiling-260nw-2313468855.jpg" alt="Vendor 5">
+        <h3>Kofi Courier</h3>
+        <p>⭐ 4.8 (98 deliveries)</p>
+        <p><strong>Location:</strong> Kasoa</p>
+        <button onclick="selectVendor('Kofi Courier', '233501234567')">Request Delivery</button>
+      </div>
+
+      <div class="vendor-card">
+        <img src="https://img.freepik.com/free-photo/portrait-handsome-man-outdoors_23-2149073882.jpg" alt="Vendor 6">
+        <h3>Kelly</h3>
+        <p>⭐ 4.7 (85 deliveries)</p>
+        <p><strong>Location:</strong> Spintex</p>
+        <button onclick="selectVendor('Kelly', '233541234567')">Request Delivery</button>
+      </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LocalGo Delivery Service. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

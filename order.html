@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Delivery Order – LocalGo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🚚 LocalGo</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="vendors.html">Vendors</a>
+      <a href="order.html" class="active">Book Delivery</a>
+      <a href="track.html">Track Order</a>
+      <a href="orders.html">My Orders</a>
+    </nav>
+    <h1>Local Delivery System</h1>
+  <button id="theme-toggle" class="theme-toggle">🌙</button>
+  </header>
+
+  <section class="order-section">
+    <h2>Book a Delivery</h2>
+    <p class="subtext">Please fill in your delivery details below.</p>
+
+    <div class="order-container">
+      <form id="orderForm">
+        <div class="vendor-info">
+          <h3>Selected Vendor:</h3>
+          <p id="vendorName">Loading...</p>
+        </div>
+
+        <label>Full Name</label>
+        <input type="text" id="customerName" placeholder="Enter your name" required>
+
+        <label>Phone Number</label>
+        <input type="tel" id="customerPhone" placeholder="e.g. 024XXXXXXX" required>
+
+        <label>Pickup Address</label>
+        <input type="text" id="pickupAddress" placeholder="Where should we pick up the item?" required>
+
+        <label>Delivery Address</label>
+        <input type="text" id="deliveryAddress" placeholder="Where should we deliver?" required>
+
+        <label>Item Description</label>
+        <textarea id="itemDescription" rows="3" placeholder="Describe the item(s)" required></textarea>
+
+        <button type="submit">Send Order via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LocalGo Delivery Service. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
